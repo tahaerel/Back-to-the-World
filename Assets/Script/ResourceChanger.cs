@@ -14,7 +14,7 @@ public class ResourceChanger : MonoBehaviour
         Gamemanager = GameObject.Find("GameManager");
       
 
-        Gamemanager.GetComponent<BinaYerlestirme>().enerjiMiktar -= 100;
+       // Gamemanager.GetComponent<BinaYerlestirme>().enerjiMiktar -= 100;
    
 
     }
