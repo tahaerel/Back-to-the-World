@@ -6,7 +6,7 @@ public class onizlemeobje : MonoBehaviour
 {
     public GameObject Olusacakobje;
     RaycastHit hit;
-    public Material materyal,materyal2;
+    public Material materyal;
     bool olusturabilirmi;
     public MeshRenderer matcolor;
 
@@ -34,7 +34,7 @@ public class onizlemeobje : MonoBehaviour
 
             GetComponent<MeshRenderer>().material.color = Color.red;
 
-            for (int i = 0; i < matcolor.materials.Length; i++)
+            for (int i = 0; i <matcolor.materials.Length; i++)
             {
                 
             matcolor.materials[i].color= Color.red;
@@ -42,14 +42,7 @@ public class onizlemeobje : MonoBehaviour
             olusturabilirmi = false;
 
         }
-        else
-        {
-            for (int j = 0; j < matcolor.materials.Length; j++)
-            {
-
-                matcolor.materials[j] = materyal;
-            }
-        }
+      
     }
 
 
@@ -58,13 +51,15 @@ public class onizlemeobje : MonoBehaviour
         if (other.gameObject != null && !other.gameObject.CompareTag("Zemin"))
         {
             GetComponent<MeshRenderer>().material = materyal;
+
             for (int i = 0; i < matcolor.materials.Length; i++)
             {
-                matcolor.materials[i] = materyal2;
-                Debug.Log("material2: " + matcolor.materials[i].name);
+
+                matcolor.materials[i].CopyPropertiesFromMaterial(materyal);
+
             }
             olusturabilirmi = true;
-            
+
         }
     }
 
@@ -90,13 +85,16 @@ public class onizlemeobje : MonoBehaviour
             {
                 Instantiate(Olusacakobje, transform.position, transform.rotation);
                 Destroy(gameObject);
-               
-
-
             }
-
-
-
         }
+
+        if (Input.GetMouseButton(1))
+        {
+
+                Destroy(gameObject);
+          
+        }
+
+
     }
 }
