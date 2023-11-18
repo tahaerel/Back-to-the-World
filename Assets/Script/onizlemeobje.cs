@@ -11,15 +11,14 @@ public class onizlemeobje : MonoBehaviour
     bool olusturabilirmi;
     public MeshRenderer matcolor;
     public GameObject Gamemanager;
+    public GameObject[] Grids;
+
 
     public static bool olusturuldu;
     void Start()
     {
 
         Gamemanager = GameObject.Find("GameManager");
-
-
-       
 
         olusturabilirmi = true;
         olusturuldu = false;
@@ -53,6 +52,9 @@ public class onizlemeobje : MonoBehaviour
             {
                 matcolor.materials[i].color = Color.red;
             }
+
+
+
             olusturabilirmi = false;
         }
     }
@@ -98,9 +100,10 @@ public class onizlemeobje : MonoBehaviour
               case 0:
 
 
-                    Gamemanager.GetComponent<BinaYerlestirme>().enerjiMiktar += Gamemanager.GetComponent<BinaYerlestirme>().bina1EnerjiMaliyet;
+              Gamemanager.GetComponent<BinaYerlestirme>().enerjiMiktar += Gamemanager.GetComponent<BinaYerlestirme>().bina1EnerjiMaliyet;
 ;
-                    Gamemanager.GetComponent<BinaYerlestirme>().suMiktar += Gamemanager.GetComponent<BinaYerlestirme>().bina1SuMaliyet;
+              Gamemanager.GetComponent<BinaYerlestirme>().suMiktar += Gamemanager.GetComponent<BinaYerlestirme>().bina1SuMaliyet;
+
                 break;
 
 
