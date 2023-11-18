@@ -468,6 +468,8 @@ MonoBehaviour:
   enerjiUI: {fileID: 721812874}
   suiUI: {fileID: 1612368411}
   demirUI: {fileID: 386133787}
+  yemekUI: {fileID: 1296328776}
+  koloniUI: {fileID: 1020296227}
 --- !u!114 &208458090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,15 +485,23 @@ MonoBehaviour:
   enerjiMiktar: 1
   suMiktar: 1
   demirMiktar: 1
+  yemekmiktar: 1
+  kolonisayisi: 1
   bina1EnerjiMaliyet: 50
   bina1SuMaliyet: 50
   bina2DemirMaliyet: 50
   bina2SuMaliyet: 50
   bina3DemirMaliyet: 50
   bina3EnerjiMaliyet: 50
+  bina4yemekMaliyet: 50
+  bina4koloniMaliyet: 50
+  bina5sumiktari: 50
+  bina5yemekmiktari: 50
   bina1UretimMiktari: 10
   bina2UretimMiktari: 20
   bina3UretimMiktari: 20
+  bina4UretimMiktari: 20
+  bina5UretimMiktari: 20
 --- !u!4 &208458091
 Transform:
   m_ObjectHideFlags: 0

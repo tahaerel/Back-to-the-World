@@ -44,8 +44,32 @@ public class objesec : MonoBehaviour
                     bnb.enerjiMiktar -= bnb.bina3EnerjiMaliyet;
                     Instantiate(OnizlemeObjeler[deger]);
                 }
+
                 
                 break;
+            case 3:
+
+                if (bnb.yemekmiktar >= bnb.bina4yemekMaliyet && bnb.kolonisayisi >= bnb.bina4koloniMaliyet)
+                {
+                    bnb.yemekmiktar -= bnb.bina4yemekMaliyet;
+                    bnb.kolonisayisi -= bnb.bina4koloniMaliyet;
+                    Instantiate(OnizlemeObjeler[deger]);
+                }
+
+
+                break;
+            case 4:
+                
+                    if (bnb.suMiktar >= bnb.bina5sumiktari && bnb.yemekmiktar >= bnb.bina5yemekmiktari)
+                    {
+                    bnb.suMiktar -= bnb.bina5sumiktari;
+                    bnb.yemekmiktar -= bnb.bina5yemekmiktari;
+                    Instantiate(OnizlemeObjeler[deger]);
+                    }
+
+
+                break;
+         
             default:
                 break;
         }

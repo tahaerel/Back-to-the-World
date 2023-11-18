@@ -10,6 +10,8 @@ public class KaynakUI : MonoBehaviour
     public TextMeshProUGUI enerjiUI;
     public TextMeshProUGUI suiUI;
     public TextMeshProUGUI demirUI;
+    public TextMeshProUGUI yemekUI;
+    public TextMeshProUGUI koloniUI;
     void Start()
     {
         
@@ -21,5 +23,7 @@ public class KaynakUI : MonoBehaviour
         enerjiUI.text = kaynak.enerjiMiktar.ToString();
         suiUI.text = kaynak.suMiktar.ToString();
         demirUI.text = kaynak.demirMiktar.ToString();
+        yemekUI.text = kaynak.yemekmiktar.ToString();
+        koloniUI.text = kaynak.kolonisayisi.ToString();
     }
 }

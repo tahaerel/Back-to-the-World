@@ -101,7 +101,35 @@ public class onizlemeobje : MonoBehaviour
                     Gamemanager.GetComponent<BinaYerlestirme>().enerjiMiktar += Gamemanager.GetComponent<BinaYerlestirme>().bina1EnerjiMaliyet;
 ;
                     Gamemanager.GetComponent<BinaYerlestirme>().suMiktar += Gamemanager.GetComponent<BinaYerlestirme>().bina1SuMaliyet;
-                break;
+              break;
+                case 1:
+
+
+                    Gamemanager.GetComponent<BinaYerlestirme>().demirMiktar += Gamemanager.GetComponent<BinaYerlestirme>().bina2DemirMaliyet;
+                    ;
+                    Gamemanager.GetComponent<BinaYerlestirme>().suMiktar += Gamemanager.GetComponent<BinaYerlestirme>().bina2SuMaliyet;
+                    break;
+                case 2:
+
+
+                    Gamemanager.GetComponent<BinaYerlestirme>().demirMiktar += Gamemanager.GetComponent<BinaYerlestirme>().bina3DemirMaliyet;
+                    ;
+                    Gamemanager.GetComponent<BinaYerlestirme>().enerjiMiktar += Gamemanager.GetComponent<BinaYerlestirme>().bina3EnerjiMaliyet;
+                    break;
+                case 3:
+
+
+                    Gamemanager.GetComponent<BinaYerlestirme>().yemekmiktar += Gamemanager.GetComponent<BinaYerlestirme>().bina4yemekMaliyet;
+                    ;
+                    Gamemanager.GetComponent<BinaYerlestirme>().kolonisayisi += Gamemanager.GetComponent<BinaYerlestirme>().bina4koloniMaliyet;
+                    break;
+                case 4:
+
+
+                    Gamemanager.GetComponent<BinaYerlestirme>().suMiktar += Gamemanager.GetComponent<BinaYerlestirme>().bina5sumiktari;
+                    ;
+                    Gamemanager.GetComponent<BinaYerlestirme>().yemekmiktar += Gamemanager.GetComponent<BinaYerlestirme>().bina5yemekmiktari;
+                    break;
 
 
             }
