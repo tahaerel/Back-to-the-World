@@ -480,9 +480,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61debf739d01eca42bfe3d6ad908ed5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enerjiMiktar: 1
-  suMiktar: 1
-  demirMiktar: 1
+  enerjiMiktar: 1000
+  suMiktar: 1000
+  demirMiktar: 1000
   bina1EnerjiMaliyet: 50
   bina1SuMaliyet: 50
   bina2DemirMaliyet: 50
