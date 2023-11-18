@@ -70,8 +70,11 @@ public class onizlemeobje : MonoBehaviour
         {
             if (olusturabilirmi)
             {
-                Instantiate(Olusacakobje, transform.position, transform.rotation);
-                Destroy(gameObject);
+                
+                    Instantiate(Olusacakobje, transform.position, transform.rotation);
+                    Destroy(gameObject);
+                
+                
             }
         }
 
