@@ -10,10 +10,19 @@ public class onizlemeobje : MonoBehaviour
     public Material materyal;
     bool olusturabilirmi;
     public MeshRenderer matcolor;
+    public GameObject Gamemanager;
 
+    public static bool olusturuldu;
     void Start()
     {
+
+        Gamemanager = GameObject.Find("GameManager");
+
+
+       
+
         olusturabilirmi = true;
+        olusturuldu = false;
         UpdatePosition();
     }
 
@@ -70,10 +79,11 @@ public class onizlemeobje : MonoBehaviour
         {
             if (olusturabilirmi)
             {
-                
-                    Instantiate(Olusacakobje, transform.position, transform.rotation);
-                    Destroy(gameObject);
-                
+                    
+             Instantiate(Olusacakobje, transform.position, transform.rotation);
+             olusturuldu = true;
+             Destroy(gameObject);
+                    
                 
             }
         }
@@ -81,6 +91,20 @@ public class onizlemeobje : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             Destroy(gameObject);
+            
+            
+           switch(objesec.index)
+            {
+              case 0:
+
+
+                    Gamemanager.GetComponent<BinaYerlestirme>().enerjiMiktar += Gamemanager.GetComponent<BinaYerlestirme>().bina1EnerjiMaliyet;
+;
+                    Gamemanager.GetComponent<BinaYerlestirme>().suMiktar += Gamemanager.GetComponent<BinaYerlestirme>().bina1SuMaliyet;
+                break;
+
+
+            }
         }
     }
 }

@@ -8,16 +8,21 @@ public class objesec : MonoBehaviour
     public static bool butona_tiklandi;
     public BinaYerlestirme bnb;
 
-
+    public static int index;
 
     public void olustur(int deger)
     {
+
+        index = deger;
+
         switch (deger)
         {
             case 0:
                 if (bnb.enerjiMiktar >= bnb.bina1EnerjiMaliyet && bnb.suMiktar >= bnb.bina1SuMaliyet)
                 {
                     Instantiate(OnizlemeObjeler[deger]);
+
+
                     bnb.enerjiMiktar -= bnb.bina1EnerjiMaliyet;
                      bnb.suMiktar -= bnb.bina1SuMaliyet;
                 }
