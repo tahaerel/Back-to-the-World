@@ -2322,11 +2322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80364649b4a999a41a2237e6fd107152, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam_parent: {fileID: 963194228}
-  Cam_speed: 0
-  MouseXSens: 2
-  MouseYSens: 2
-  HideTheCursor: 0
+  panSpeed: 24
 --- !u!1 &990633987
 GameObject:
   m_ObjectHideFlags: 0

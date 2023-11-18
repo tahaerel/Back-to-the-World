@@ -16,7 +16,8 @@ public class Camera_freelook : MonoBehaviour
         float yatay = Input.GetAxis("Horizontal");
         float dikey = Input.GetAxis("Vertical");
 
-        Vector3 hareket = new Vector3(yatay, 0f, dikey) * panSpeed * Time.deltaTime;
+        Vector3 hareket = new Vector3(-dikey, 0f, yatay) * panSpeed*5 * Time.deltaTime;
+        transform.Translate(hareket * panSpeed * Time.deltaTime, Space.World);
 
         // Check if the right mouse button is held down
         if (Input.GetMouseButton(1))
@@ -33,7 +34,7 @@ public class Camera_freelook : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y");
 
         // Calculate the pan direction
-        Vector3 panDirection = new Vector3(mouseX, 0f, mouseY).normalized;
+        Vector3 panDirection = new Vector3(mouseY, 0f, -mouseX ).normalized;
 
         // Move the camera in the pan direction
         transform.Translate(panDirection * panSpeed * Time.deltaTime, Space.World);
