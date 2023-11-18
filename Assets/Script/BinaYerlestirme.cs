@@ -13,7 +13,7 @@ public class BinaYerlestirme : MonoBehaviour
     //public GameObject bina3;
 
 
-    public int bina1EnerjiMaliyet = 50;
+    public  int bina1EnerjiMaliyet = 50;
     public int bina1SuMaliyet = 50;
     public int bina2DemirMaliyet = 50;
     public int bina2SuMaliyet = 50;
@@ -35,40 +35,30 @@ public class BinaYerlestirme : MonoBehaviour
 
     void Update()
     {
-       
-        //if (Input.GetKeyDown(KeyCode.B))
-        //{
-        //    Bina1Yerlestir();
-        //}
-
-        //if (Input.GetKeyDown(KeyCode.C))
-        //{
-        //    Bina2Yerlestir();
-        //}
-
-        //if (Input.GetKeyDown(KeyCode.D))
-        //{
-        //    Bina3Yerlestir();
-        //}
         Debug.Log(enerjiMiktar);
         Debug.Log(suMiktar);
         Debug.Log(demirMiktar);
-
-
     }
 
     void Bina1Yerlestir()
     {
+        Debug.Log("Bina1Yerlestir");
         if (enerjiMiktar >= bina1EnerjiMaliyet && suMiktar >= bina1SuMaliyet && !bina1Yerlestirildi)
         {
+            Debug.Log("Bina1Yerlestirifici");
+
             enerjiMiktar -= bina1EnerjiMaliyet;
             suMiktar -= bina1SuMaliyet;
             bina1Yerlestirildi = true;
+            Debug.Log("miktar azaldı");
+
         }
     }
 
     void Bina2Yerlestir()
     {
+        Debug.Log("Bina2Yerlestir");
+
         if (demirMiktar >= bina2DemirMaliyet && suMiktar >= bina2SuMaliyet && !bina2Yerlestirildi)
         {
             demirMiktar -= bina2DemirMaliyet;
