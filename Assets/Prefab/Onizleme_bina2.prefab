@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4618099509111493872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalPosition: {x: 960, y: 566.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -52,7 +52,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4618099509111493872}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Olusacakobje: {fileID: 3675264322775494263, guid: c018e29e8afa3fb4fa8082180bb25849, type: 3}
+  gridSize: 1
   materyal: {fileID: 2100000, guid: ee7736f3334e9f0448153b4256bb0628, type: 2}
   matcolor: {fileID: 3368812402406466001}
 --- !u!54 &3662995505558686361
@@ -129,8 +130,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9.243042, y: 5.5321655, z: 9.63027}
-  m_Center: {x: 0.10736084, y: -0.844574, z: -0.9262533}
+  m_Size: {x: 9.243042, y: 5.3307495, z: 9.63027}
+  m_Center: {x: 0.10736084, y: -0.74386597, z: -0.9262533}
 --- !u!1001 &4107837743411543381
 PrefabInstance:
   m_ObjectHideFlags: 0
