@@ -36,20 +36,20 @@ public class BinaYerlestirme : MonoBehaviour
     void Update()
     {
        
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            Bina1Yerlestir();
-        }
+        //if (Input.GetKeyDown(KeyCode.B))
+        //{
+        //    Bina1Yerlestir();
+        //}
 
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            Bina2Yerlestir();
-        }
+        //if (Input.GetKeyDown(KeyCode.C))
+        //{
+        //    Bina2Yerlestir();
+        //}
 
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            Bina3Yerlestir();
-        }
+        //if (Input.GetKeyDown(KeyCode.D))
+        //{
+        //    Bina3Yerlestir();
+        //}
         Debug.Log(enerjiMiktar);
         Debug.Log(suMiktar);
         Debug.Log(demirMiktar);
