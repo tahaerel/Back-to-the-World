@@ -15,18 +15,28 @@ public class BinaYerlestirme : MonoBehaviour
     //public GameObject bina3;
 
 
-    public  int bina1EnerjiMaliyet = 50;
-    public int bina1SuMaliyet = 50;
-    public int bina2DemirMaliyet = 50;
-    public int bina2SuMaliyet = 50;
-    public int bina3DemirMaliyet = 50;
-    public int bina3EnerjiMaliyet = 50;
+    public int bina1EnerjiMaliyet = 250;
+    public int bina1DemirMaliyet = 150;
+    public int bina1YemekMaliyet = 100;
 
-    public int bina4yemekMaliyet = 50;
-    public int bina4koloniMaliyet = 50;
+    public int bina2DemirMaliyet = 20;
+    
 
-    public int bina5sumiktari = 50;
-    public int bina5yemekmiktari = 50;
+
+    public int bina3DemirMaliyet = 100;
+    public int bina3EnerjiMaliyet = 10;
+    public int bina3SuMaliyet= 50;
+    public int bina3KoloniMaliyet = 2;
+
+
+    public int bina4DemirMaliyet = 50;
+    public int bina4EnergyMaliyet = 20;
+    public int bina4koloniMaliyet = 1;
+
+    public int bina5demirMmaliyet = 500;
+    public int bina5yenergyMaliyet = 100;
+    public int bina5ySuMaliyet = 200;
+    public int bina5KoloniMaliyet = 20;
 
     public int bina1UretimMiktari = 10;
     public int bina2UretimMiktari = 20;
@@ -50,12 +60,13 @@ public class BinaYerlestirme : MonoBehaviour
     void Bina1Yerlestir()
     {
         Debug.Log("Bina1Yerlestir");
-        if (enerjiMiktar >= bina1EnerjiMaliyet && suMiktar >= bina1SuMaliyet && !bina1Yerlestirildi)
+        if (enerjiMiktar >= bina1EnerjiMaliyet && demirMiktar >= bina1DemirMaliyet && yemekmiktar >= bina1YemekMaliyet && !bina1Yerlestirildi)
         {
             Debug.Log("Bina1Yerlestirifici");
 
             enerjiMiktar -= bina1EnerjiMaliyet;
-            suMiktar -= bina1SuMaliyet;
+            demirMiktar -= bina1DemirMaliyet;
+            yemekmiktar -= bina1YemekMaliyet;
             bina1Yerlestirildi = true;
             Debug.Log("miktar azaldı");
 
@@ -66,38 +77,43 @@ public class BinaYerlestirme : MonoBehaviour
     {
         Debug.Log("Bina2Yerlestir");
 
-        if (demirMiktar >= bina2DemirMaliyet && suMiktar >= bina2SuMaliyet && !bina2Yerlestirildi)
+        if (demirMiktar >= bina2DemirMaliyet )
         {
             demirMiktar -= bina2DemirMaliyet;
-            suMiktar -= bina2SuMaliyet;
+            
             bina2Yerlestirildi = true;
         }
     }
 
     void Bina3Yerlestir()
     {
-        if (demirMiktar >= bina3DemirMaliyet && enerjiMiktar >= bina3EnerjiMaliyet && !bina3Yerlestirildi)
+        if (demirMiktar >= bina3DemirMaliyet && enerjiMiktar >= bina3EnerjiMaliyet && suMiktar >= bina3SuMaliyet && kolonisayisi>= bina3KoloniMaliyet )
         {
             demirMiktar -= bina3DemirMaliyet;
             enerjiMiktar -= bina3EnerjiMaliyet;
+            suMiktar -= bina3SuMaliyet;
+            kolonisayisi-= bina3KoloniMaliyet;
             bina3Yerlestirildi = true;
         }
     }
     void Bina4Yerlestir()
     {
-        if (yemekmiktar >= bina4yemekMaliyet && kolonisayisi >= bina4koloniMaliyet )
+        if (demirMiktar >= bina4DemirMaliyet && kolonisayisi >= bina4koloniMaliyet &&  enerjiMiktar >= bina4EnergyMaliyet)
         {
-            yemekmiktar -= bina4yemekMaliyet;
             kolonisayisi -= bina4koloniMaliyet;
+            demirMiktar -= bina4DemirMaliyet;
+            enerjiMiktar -= bina4EnergyMaliyet;
             bina4Yerlestirildi = true;
         }
     }
     void Bina5Yerlestir()
     {
-        if (suMiktar >= bina5sumiktari&& yemekmiktar >= bina5yemekmiktari )
+        if (demirMiktar >= bina5demirMmaliyet && enerjiMiktar >= bina5yenergyMaliyet && suMiktar >= bina5ySuMaliyet && kolonisayisi >= bina5KoloniMaliyet)
         {
-            suMiktar -= bina5sumiktari;
-            yemekmiktar -= bina5yemekmiktari;
+            demirMiktar -= bina5demirMmaliyet;
+            enerjiMiktar -= bina5yenergyMaliyet;
+            suMiktar -= bina5ySuMaliyet;
+            kolonisayisi -= bina5KoloniMaliyet;
             bina5Yerlestirildi = true;
         }
     }

@@ -18,30 +18,33 @@ public class objesec : MonoBehaviour
         switch (deger)
         {
             case 0:
-                if (bnb.enerjiMiktar >= bnb.bina1EnerjiMaliyet && bnb.suMiktar >= bnb.bina1SuMaliyet)
+                if (bnb.enerjiMiktar >= bnb.bina1EnerjiMaliyet && bnb.demirMiktar >= bnb.bina1DemirMaliyet && bnb.yemekmiktar >= bnb.bina1YemekMaliyet)
                 {
                     Instantiate(OnizlemeObjeler[deger]);
 
 
                     bnb.enerjiMiktar -= bnb.bina1EnerjiMaliyet;
-                     bnb.suMiktar -= bnb.bina1SuMaliyet;
+                    bnb.demirMiktar -= bnb.bina1DemirMaliyet;
+                    bnb.yemekmiktar -= bnb.bina1YemekMaliyet;
                 }
                
                 break;
             case 1:
-                if (bnb.demirMiktar >= bnb.bina2DemirMaliyet && bnb.suMiktar >= bnb.bina2SuMaliyet)
+                if (bnb.demirMiktar >= bnb.bina2DemirMaliyet)
                 {
                     bnb.demirMiktar -= bnb.bina2DemirMaliyet;
-                   bnb.suMiktar -= bnb.bina2SuMaliyet;
+                  
                     Instantiate(OnizlemeObjeler[deger]);
                 }
                 
                 break;
             case 2:
-                if (bnb.demirMiktar >= bnb.bina3DemirMaliyet && bnb.enerjiMiktar >= bnb.bina3EnerjiMaliyet)
+                if (bnb.demirMiktar >= bnb.bina3DemirMaliyet && bnb.enerjiMiktar >= bnb.bina3EnerjiMaliyet && bnb.suMiktar >= bnb.bina3SuMaliyet && bnb.kolonisayisi >= bnb.bina3KoloniMaliyet)
                 {
                     bnb.demirMiktar -= bnb.bina3DemirMaliyet;
                     bnb.enerjiMiktar -= bnb.bina3EnerjiMaliyet;
+                    bnb.suMiktar -= bnb.bina3SuMaliyet;
+                    bnb.kolonisayisi -= bnb.bina3KoloniMaliyet;
                     Instantiate(OnizlemeObjeler[deger]);
                 }
 
@@ -49,10 +52,12 @@ public class objesec : MonoBehaviour
                 break;
             case 3:
 
-                if (bnb.yemekmiktar >= bnb.bina4yemekMaliyet && bnb.kolonisayisi >= bnb.bina4koloniMaliyet)
+                if (bnb.demirMiktar >= bnb.bina4DemirMaliyet && bnb.kolonisayisi >= bnb.bina4koloniMaliyet && bnb.enerjiMiktar >= bnb.bina4EnergyMaliyet)
                 {
-                    bnb.yemekmiktar -= bnb.bina4yemekMaliyet;
+                    bnb.demirMiktar -= bnb.bina4DemirMaliyet;
                     bnb.kolonisayisi -= bnb.bina4koloniMaliyet;
+                    bnb.enerjiMiktar -= bnb.bina4EnergyMaliyet;
+                
                     Instantiate(OnizlemeObjeler[deger]);
                 }
 
@@ -60,10 +65,12 @@ public class objesec : MonoBehaviour
                 break;
             case 4:
                 
-                    if (bnb.suMiktar >= bnb.bina5sumiktari && bnb.yemekmiktar >= bnb.bina5yemekmiktari)
-                    {
-                    bnb.suMiktar -= bnb.bina5sumiktari;
-                    bnb.yemekmiktar -= bnb.bina5yemekmiktari;
+                    if (bnb.demirMiktar >= bnb.bina5demirMmaliyet && bnb.enerjiMiktar >= bnb.bina5yenergyMaliyet && bnb.suMiktar >= bnb.bina5ySuMaliyet && bnb.kolonisayisi >= bnb.bina5KoloniMaliyet)
+                    {   
+                    bnb.demirMiktar -= bnb.bina5demirMmaliyet;
+                    bnb.enerjiMiktar -= bnb.bina5yenergyMaliyet;
+                    bnb.suMiktar -= bnb.bina5ySuMaliyet;
+                    bnb.kolonisayisi -= bnb.bina5KoloniMaliyet;
                     Instantiate(OnizlemeObjeler[deger]);
                     }
 

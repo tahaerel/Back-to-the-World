@@ -129,12 +129,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gamemanager: {fileID: 0}
-  enerji: 6
+  enerji: 50
   su: 0
   demir: 0
   yemek: 0
-  zamanAraligi: 10
+  koloni: 0
+  zamanAraligi: 5
   Binaid: 1
+  is_stone: 0
+  is_water: 0
 --- !u!65 &7293876556065223441
 BoxCollider:
   m_ObjectHideFlags: 0
