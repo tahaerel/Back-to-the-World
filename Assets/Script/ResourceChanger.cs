@@ -19,7 +19,7 @@ public class ResourceChanger : MonoBehaviour
         switch (Binaid)
         {
             case 0:
-                InvokeRepeating("ArtirKoloni", zamanAraligi, zamanAraligi);
+                ArtirKoloni();
                 break;
 
             case 1:

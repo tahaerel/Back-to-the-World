@@ -322,21 +322,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61debf739d01eca42bfe3d6ad908ed5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enerjiMiktar: 1000
-  suMiktar: 1000
-  demirMiktar: 1000
-  yemekmiktar: 1000
-  kolonisayisi: 1000
-  bina1EnerjiMaliyet: 50
-  bina1SuMaliyet: 50
-  bina2DemirMaliyet: 50
-  bina2SuMaliyet: 50
-  bina3DemirMaliyet: 50
-  bina3EnerjiMaliyet: 50
-  bina4yemekMaliyet: 50
-  bina4koloniMaliyet: 50
-  bina5sumiktari: 50
-  bina5yemekmiktari: 50
+  enerjiMiktar: 200
+  suMiktar: 100
+  demirMiktar: 200
+  yemekmiktar: 100
+  kolonisayisi: 8
+  bina1EnerjiMaliyet: 250
+  bina1DemirMaliyet: 150
+  bina1YemekMaliyet: 100
+  bina2DemirMaliyet: 20
+  bina3DemirMaliyet: 100
+  bina3EnerjiMaliyet: 10
+  bina3SuMaliyet: 50
+  bina3KoloniMaliyet: 2
+  bina4DemirMaliyet: 50
+  bina4EnergyMaliyet: 20
+  bina4koloniMaliyet: 1
+  bina5demirMmaliyet: 500
+  bina5yenergyMaliyet: 100
+  bina5ySuMaliyet: 200
+  bina5KoloniMaliyet: 20
   bina1UretimMiktari: 10
   bina2UretimMiktari: 20
   bina3UretimMiktari: 20
@@ -3288,6 +3293,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panSpeed: 24
+  zoomSpeed: 5
+  zoomMin: 7
+  zoomMax: 55
+  panLimitX: 20
+  panLimitZ: 30
 --- !u!1 &998327811
 GameObject:
   m_ObjectHideFlags: 0
@@ -5970,6 +5980,14 @@ PrefabInstance:
     - target: {fileID: 2471403536785970825, guid: ba946bc7e9ff5844d87fe9f0b15ee4fc, type: 3}
       propertyPath: m_SizeDelta.y
       value: 237.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471403537084055738, guid: ba946bc7e9ff5844d87fe9f0b15ee4fc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: bf2a66ffb12fb5d449c3fa979cd9dc3a, type: 2}
+    - target: {fileID: 2471403537084055738, guid: ba946bc7e9ff5844d87fe9f0b15ee4fc, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2471403537084055739, guid: ba946bc7e9ff5844d87fe9f0b15ee4fc, type: 3}
       propertyPath: m_AnchorMax.y
