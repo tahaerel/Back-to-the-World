@@ -317,6 +317,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Particle System
       objectReference: {fileID: 0}
+    - target: {fileID: 2104233217954934165, guid: be6e27173f527a64aada702cf9901aa3, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.a
+      value: 0.07058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104233217954934165, guid: be6e27173f527a64aada702cf9901aa3, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key2.a
+      value: 0.13725491
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be6e27173f527a64aada702cf9901aa3, type: 3}
 --- !u!4 &8831201879987989879 stripped
