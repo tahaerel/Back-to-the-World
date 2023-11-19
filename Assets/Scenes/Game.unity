@@ -3824,10 +3824,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008d7593b832fea4cb66674a8e744f7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kameraHiz: 10
-  zoomHassasiyet: 2
-  sagaTikBasili: 0
-  sagTikIlkKonum: {x: 0, y: 0, z: 0}
 --- !u!114 &963194231
 MonoBehaviour:
   m_ObjectHideFlags: 0
