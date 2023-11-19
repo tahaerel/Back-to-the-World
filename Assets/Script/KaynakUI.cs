@@ -12,12 +12,7 @@ public class KaynakUI : MonoBehaviour
     public TextMeshProUGUI demirUI;
     public TextMeshProUGUI yemekUI;
     public TextMeshProUGUI koloniUI;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         enerjiUI.text = kaynak.enerjiMiktar.ToString();
