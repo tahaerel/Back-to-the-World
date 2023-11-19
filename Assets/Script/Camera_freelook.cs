@@ -8,35 +8,57 @@ using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class Camera_freelook : MonoBehaviour
 {
-    public float panSpeed = 5f; // Pan speed
+    public float panSpeed = 5f; 
+    public float zoomSpeed = 5f; 
+    public float zoomMin = 1f;   
+    public float zoomMax = 10f;  
+    public float panLimitX = 50f; 
+    public float panLimitZ = 50f; 
 
     void Update()
     {
-        // WASD tuþlarýyla yatay hareket
         float yatay = Input.GetAxis("Horizontal");
         float dikey = Input.GetAxis("Vertical");
 
-        Vector3 hareket = new Vector3(-dikey, 0f, yatay) * panSpeed*5 * Time.deltaTime;
-        transform.Translate(hareket * panSpeed * Time.deltaTime, Space.World);
+        Vector3 hareket = new Vector3(-dikey, 0f, yatay) * panSpeed * Time.deltaTime;
+        transform.Translate(hareket, Space.World);
 
-        // Check if the right mouse button is held down
+        Vector3 clampedPosition = new Vector3(
+            Mathf.Clamp(transform.position.x, -panLimitX, panLimitX),
+            transform.position.y,
+            Mathf.Clamp(transform.position.z, -panLimitZ, panLimitZ)
+        );
+
+        transform.position = clampedPosition;
+
+        float zoomInput = Input.GetAxis("Mouse ScrollWheel");
+        ZoomCamera(zoomInput);
+    }
+
+    void ZoomCamera(float zoomInput)
+    {
+        float zoomAmount = -zoomInput * zoomSpeed;
+
+        float newZoom = Mathf.Clamp(transform.position.y + zoomAmount, zoomMin, zoomMax);
+
+        transform.position = new Vector3(transform.position.x, newZoom, transform.position.z);
+    }
+
+    void LateUpdate()
+    {
         if (Input.GetMouseButton(1))
         {
-            // Call the function to handle camera panning
             PanCamera();
         }
     }
 
     void PanCamera()
     {
-        // Get the mouse movement in the horizontal and vertical axes
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
 
-        // Calculate the pan direction
-        Vector3 panDirection = new Vector3(mouseY, 0f, -mouseX ).normalized;
+        Vector3 panDirection = new Vector3(mouseY, 0f, -mouseX).normalized;
 
-        // Move the camera in the pan direction
         transform.Translate(panDirection * panSpeed * Time.deltaTime, Space.World);
     }
 }
