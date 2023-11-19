@@ -25,7 +25,7 @@ public class Consumable : Item
         StringBuilder builder = new StringBuilder();
 
         builder.Append(Rarity.Name).AppendLine();
-        builder.Append("<color=green>Need: ").Append(useText).Append("</color>").AppendLine();
+        builder.Append("<color=green>Gerekli: ").Append(useText).Append("</color>").AppendLine();
         
         //builder.Append("Sell Price: ").Append(SellPrice).Append(" Gold");
 

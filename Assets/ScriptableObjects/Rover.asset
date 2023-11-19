@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 635e78c6f61ea514cb122ef4f4fa2a0d, type: 3}
-  m_Name: Launchpad
+  m_Name: Rover
   m_EditorClassIdentifier: 
-  name: "Roket F\u0131rlat\u0131c\u0131"
+  name: Rover
   sellPrice: 1
-  rarity: {fileID: 11400000, guid: e88872819e740ee46b46d45d4d6cf5cd, type: 2}
-  useText: "500 Demir + 100 Eneri + 200 Su + 20 \u0130nsan"
+  rarity: {fileID: 11400000, guid: 9a4c6ca29c3fe3a43bb60db84c3c88a7, type: 2}
+  useText: 100 Demir

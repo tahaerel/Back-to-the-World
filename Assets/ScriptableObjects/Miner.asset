@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 635e78c6f61ea514cb122ef4f4fa2a0d, type: 3}
   m_Name: Miner
   m_EditorClassIdentifier: 
-  name: Miner
+  name: "Kaz\u0131c\u0131"
   sellPrice: 1
   rarity: {fileID: 11400000, guid: 2702395d36a9e3848b511611840c36bd, type: 2}
-  useText: 50 Iron + 20 Energy +      1 People
+  useText: "50 Demir + 20 Enerji +      1 \u0130nsan"

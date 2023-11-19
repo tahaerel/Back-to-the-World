@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class objesec : MonoBehaviour
 {
     public GameObject[] OnizlemeObjeler;
+    public GameObject Rover;
     public static bool butona_tiklandi;
     public BinaYerlestirme bnb;
     public GameObject Error;
     public static int index;
-
+    public Image Rovertask;
     public void olustur(int deger)
     {
 
@@ -101,8 +103,40 @@ public class objesec : MonoBehaviour
 
 
                 break;
-         
-            default:
+
+            case 5:
+                if (bnb.demirMiktar >= bnb.roverdemirmaliyet)
+                {
+                    bnb.demirMiktar -= bnb.roverdemirmaliyet;
+
+                    Rovertask.GetComponent<Image>().color = new Color32(50, 166, 51, 255);
+
+                    Vector3 kameraPozisyon = Camera.main.transform.position;
+
+                    Vector3 kameraYonu = Camera.main.transform.forward;
+
+                    // Objeyi biraz ileriye yerleştir
+                    Vector3 olusturulacakPozisyon = kameraPozisyon + kameraYonu * 50.0f;
+
+                    // Y değerini sabitle
+                    olusturulacakPozisyon.y = 1;
+
+                    // Objeyi oluştur
+                    GameObject yeniObje = Instantiate(Rover, olusturulacakPozisyon, Quaternion.identity);
+
+                    // Objeyi kamera bakış yönüne doğru çevir
+                    yeniObje.transform.rotation = Quaternion.Euler(0, 180, 0); // Rotasyonu sabitle
+
+
+                }
+                else
+                {
+                    Error.SetActive(true);
+                    StartCoroutine(DeactivateErrorAfterDelay(1.5f));
+
+                }
+                break;
+                    default:
 
                 break;
         }

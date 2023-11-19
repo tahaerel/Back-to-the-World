@@ -16,14 +16,11 @@ public class BinaYerlestirme : MonoBehaviour
     public int bina1YemekMaliyet = 100;
 
     public int bina2DemirMaliyet = 20;
-    
-
 
     public int bina3DemirMaliyet = 100;
     public int bina3EnerjiMaliyet = 10;
     public int bina3SuMaliyet= 50;
     public int bina3KoloniMaliyet = 2;
-
 
     public int bina4DemirMaliyet = 50;
     public int bina4EnergyMaliyet = 20;
@@ -34,11 +31,15 @@ public class BinaYerlestirme : MonoBehaviour
     public int bina5ySuMaliyet = 200;
     public int bina5KoloniMaliyet = 20;
 
+    public int roverdemirmaliyet = 100;
+
     public int bina1UretimMiktari = 10;
     public int bina2UretimMiktari = 20;
     public int bina3UretimMiktari = 20;
     public int bina4UretimMiktari = 20;
     public int bina5UretimMiktari = 20;
+    public int RoveruretimMiktari = 20;
 
-    
+
+
 }

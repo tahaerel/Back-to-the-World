@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using TMPro;
 using UnityEngine;
-using static UnityEditor.Progress;
 using UnityEngine.UI;
 
 
