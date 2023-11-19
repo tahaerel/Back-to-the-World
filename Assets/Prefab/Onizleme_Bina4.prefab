@@ -108,7 +108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759137491459761298}
   m_LocalRotation: {x: -0, y: -0, z: -0.000000014901159, w: 1}
-  m_LocalPosition: {x: -0.14, y: -0.05, z: -0.55}
+  m_LocalPosition: {x: -0.14, y: 0.042, z: -0.55}
   m_LocalScale: {x: 0.17732866, y: 0.17732866, z: 0.17732866}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -321,6 +321,7 @@ MonoBehaviour:
   materyal: {fileID: 2100000, guid: ee7736f3334e9f0448153b4256bb0628, type: 2}
   matcolor: {fileID: 8080527730717629543}
   Gamemanager: {fileID: 0}
+  Grids: []
 --- !u!54 &-1516630831915139521
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -286,6 +286,7 @@ MonoBehaviour:
   materyal: {fileID: 2100000, guid: ee7736f3334e9f0448153b4256bb0628, type: 2}
   matcolor: {fileID: 2887139369438007497}
   Gamemanager: {fileID: 0}
+  Grids: []
 --- !u!54 &-1516630831915139521
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -494,7 +495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8969969541026227491}
   m_LocalRotation: {x: -0.000000010536712, y: 0.7071068, z: -0.000000010536712, w: 0.7071068}
-  m_LocalPosition: {x: -46, y: 42.2, z: 8}
+  m_LocalPosition: {x: -46, y: 47, z: 8}
   m_LocalScale: {x: 17.424932, y: 17.424938, z: 17.424932}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -569,17 +570,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: d53dae6c5c8284649a305922e80b423a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee7736f3334e9f0448153b4256bb0628, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d53dae6c5c8284649a305922e80b423a, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 2cd7a389150c8034ab0b5fadde5b7082, type: 2}
+      objectReference: {fileID: 2100000, guid: ee7736f3334e9f0448153b4256bb0628, type: 2}
     - target: {fileID: -7511558181221131132, guid: d53dae6c5c8284649a305922e80b423a, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 2cd7a389150c8034ab0b5fadde5b7082, type: 2}
+      objectReference: {fileID: 2100000, guid: ee7736f3334e9f0448153b4256bb0628, type: 2}
     - target: {fileID: -7511558181221131132, guid: d53dae6c5c8284649a305922e80b423a, type: 3}
       propertyPath: m_Materials.Array.data[3]
       value: 
-      objectReference: {fileID: 2100000, guid: 2cd7a389150c8034ab0b5fadde5b7082, type: 2}
+      objectReference: {fileID: 2100000, guid: ee7736f3334e9f0448153b4256bb0628, type: 2}
+    - target: {fileID: -7511558181221131132, guid: d53dae6c5c8284649a305922e80b423a, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee7736f3334e9f0448153b4256bb0628, type: 2}
     - target: {fileID: 919132149155446097, guid: d53dae6c5c8284649a305922e80b423a, type: 3}
       propertyPath: m_Name
       value: sera (1)
