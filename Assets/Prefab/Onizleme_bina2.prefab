@@ -286,7 +286,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4506768233793182398}
-  - {fileID: 4846967246433354405}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -357,7 +356,11 @@ MonoBehaviour:
   materyal: {fileID: 2100000, guid: ee7736f3334e9f0448153b4256bb0628, type: 2}
   matcolor: {fileID: 3368812402406466001}
   Gamemanager: {fileID: 0}
-  Grids: []
+  renderers:
+  - {fileID: 9051284172516567391}
+  - {fileID: 921537117657769998}
+  - {fileID: 8009814955588127078}
+  - {fileID: 2468474466391357101}
 --- !u!54 &3662995505558686361
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -494,17 +497,17 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8293970317899442207}
-  m_LocalRotation: {x: -0, y: -0, z: -0.000000014901159, w: 1}
-  m_LocalPosition: {x: -0.61, y: 0.77, z: -3.28}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0.000000010536712, z: -0.00000001053671, w: 0.7071067}
+  m_LocalPosition: {x: -0.08766173, y: 0.267, z: 0.0535}
+  m_LocalScale: {x: 0.041905608, y: 0.01201851, z: 0.067463085}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1412213650520313897}
   - {fileID: 8793213729899853442}
   - {fileID: 7444449112578834361}
   - {fileID: 4747736165803185024}
-  m_Father: {fileID: 3777129407555875486}
-  m_RootOrder: 1
+  m_Father: {fileID: 4506768233793182398}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4107837743411543381
 PrefabInstance:

@@ -217,6 +217,11 @@ MonoBehaviour:
   materyal: {fileID: 2100000, guid: ee7736f3334e9f0448153b4256bb0628, type: 2}
   matcolor: {fileID: 6409211645767344233}
   Gamemanager: {fileID: 0}
+  renderers:
+  - {fileID: 5373648235932951434}
+  - {fileID: 125663632966107718}
+  - {fileID: 400598286483629305}
+  - {fileID: 3025727823618473672}
 --- !u!1 &3957982827072973483
 GameObject:
   m_ObjectHideFlags: 0

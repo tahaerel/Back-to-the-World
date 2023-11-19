@@ -11,7 +11,7 @@ public class onizlemeobje : MonoBehaviour
     bool olusturabilirmi;
     public MeshRenderer matcolor;
     public GameObject Gamemanager;
-    public GameObject[] Grids;
+    public SpriteRenderer[] renderers;
 
 
     public static bool olusturuldu;
@@ -52,6 +52,10 @@ public class onizlemeobje : MonoBehaviour
             {
                 matcolor.materials[i].color = Color.red;
             }
+            for (int j =0; j < renderers.Length; j++)
+            {
+                renderers[j].color=Color.red;
+            }
 
 
 
@@ -69,6 +73,11 @@ public class onizlemeobje : MonoBehaviour
             {
                 matcolor.materials[i].CopyPropertiesFromMaterial(materyal);
             }
+            for (int j = 0; j < renderers.Length; j++)
+            {
+                renderers[j].color = Color.green;
+            }
+
             olusturabilirmi = true;
         }
     }

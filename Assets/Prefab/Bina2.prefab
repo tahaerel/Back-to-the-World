@@ -111,7 +111,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3675264322775494263}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d6ca4bb04768444f935c28d9d3d19bd, type: 3}
   m_Name: 
@@ -129,7 +129,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gamemanager: {fileID: 0}
-  enerji: 0
+  enerji: 6
+  su: 0
+  demir: 0
+  yemek: 0
+  zamanAraligi: 10
+  Binaid: 1
 --- !u!65 &7293876556065223441
 BoxCollider:
   m_ObjectHideFlags: 0

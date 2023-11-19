@@ -873,6 +873,7 @@ GameObject:
   - component: {fileID: 3190118273477913623}
   - component: {fileID: 1995210499659795591}
   - component: {fileID: -4420754032518154315}
+  - component: {fileID: 1596704892858165554}
   m_Layer: 0
   m_Name: Bina3
   m_TagString: Player
@@ -966,7 +967,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3675264322775494263}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c385c947c98fa24ba6c58591d7a3a3f, type: 3}
   m_Name: 
@@ -987,6 +988,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1596704892858165554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3675264322775494263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d25108560f5d74f48b23b78c5bbcbeae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gamemanager: {fileID: 0}
+  enerji: 6
+  su: 0
+  demir: 0
+  yemek: 19
+  zamanAraligi: 10
+  Binaid: 2
 --- !u!1 &3712922362648788273
 GameObject:
   m_ObjectHideFlags: 0
