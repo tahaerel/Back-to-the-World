@@ -45,12 +45,7 @@ public class BinaYerlestirme : MonoBehaviour
         StartCoroutine(UretimDongusu());
     }
 
-    void Update()
-    {
-        Debug.Log(enerjiMiktar);
-        Debug.Log(suMiktar);
-        Debug.Log(demirMiktar);
-    }
+    
 
     void Bina1Yerlestir()
     {

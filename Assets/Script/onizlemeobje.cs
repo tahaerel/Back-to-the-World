@@ -42,7 +42,7 @@ public class onizlemeobje : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject != null && !other.gameObject.CompareTag("Zemin"))
+        if (other.gameObject != null && !other.gameObject.CompareTag("Zemin") && !other.gameObject.CompareTag("demir")&&!other.gameObject.CompareTag("su"))
         {
             Debug.Log("Çarpma var");
 

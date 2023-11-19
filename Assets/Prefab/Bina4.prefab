@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3190118273477913623}
   - component: {fileID: -4420754032518154315}
   - component: {fileID: 3194769710498135606}
+  - component: {fileID: 6312229677932030525}
   m_Layer: 0
   m_Name: Bina4
   m_TagString: Player
@@ -143,11 +144,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gamemanager: {fileID: 0}
   enerji: 6
-  su: 4
+  su: 12
   demir: 7
   yemek: 0
-  zamanAraligi: 10
+  koloni: 0
+  zamanAraligi: 1
   Binaid: 3
+  is_stone: 0
+  is_water: 0
+  other2: {fileID: 3190118273477913623}
+--- !u!114 &6312229677932030525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3675264322775494263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a675158487f487345ae515580e30a530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7472453289713008901
 GameObject:
   m_ObjectHideFlags: 0
