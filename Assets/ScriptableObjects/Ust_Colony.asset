@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d84887a3a56a434a9b664d116a753c2, type: 3}
-  m_Name: Energygain 3
+  m_Script: {fileID: 11500000, guid: 635e78c6f61ea514cb122ef4f4fa2a0d, type: 3}
+  m_Name: Ust_Colony
   m_EditorClassIdentifier: 
-  name: "Demir Miktar\u0131n\u0131 G\xF6sterir"
-  textColour: {r: 0.9529412, g: 0.5294118, b: 0.34509805, a: 1}
+  name: "\u0130nsan"
+  sellPrice: 1
+  rarity: {fileID: 11400000, guid: 136423ecec69bc3489adc881abe400f3, type: 2}
+  useText: "\xDCs"

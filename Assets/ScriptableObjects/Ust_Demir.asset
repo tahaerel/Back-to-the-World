@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 635e78c6f61ea514cb122ef4f4fa2a0d, type: 3}
-  m_Name: Energy
+  m_Name: Ust_Demir
   m_EditorClassIdentifier: 
-  name: Enerji
+  name: Demir
   sellPrice: 1
-  rarity: {fileID: 11400000, guid: 8ce4e05f6aaeca840966ddb28a8ee2f4, type: 2}
-  useText: "G\xFCne\u015F Paneli"
+  rarity: {fileID: 11400000, guid: 5dbf171a29d87f841a839406319252c0, type: 2}
+  useText: "Kaz\u0131c\u0131"
