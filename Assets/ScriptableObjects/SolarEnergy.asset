@@ -15,4 +15,4 @@ MonoBehaviour:
   name: "G\xFCne\u015F Paneli"
   sellPrice: 1
   rarity: {fileID: 11400000, guid: f830f104a82a664409b2a1d54a90135a, type: 2}
-  useText: 20 Demir
+  useText: 30 Demir

@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Sera
   sellPrice: 1
   rarity: {fileID: 11400000, guid: c8289caefda48284daa5078573f0b1a3, type: 2}
-  useText: "100 Demir + 10 Enerji +   50 Su + 2 \u0130nsan"
+  useText: "100 Demir + 120 Enerji +   150 Su + 2 \u0130nsan"

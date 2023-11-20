@@ -1077,7 +1077,7 @@ MonoBehaviour:
   enerji: 0
   su: 0
   demir: 0
-  yemek: 50
+  yemek: 30
   koloni: 0
   zamanAraligi: 10
   Binaid: 2

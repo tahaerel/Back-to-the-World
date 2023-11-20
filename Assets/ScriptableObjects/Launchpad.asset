@@ -15,4 +15,4 @@ MonoBehaviour:
   name: "Roket F\u0131rlat\u0131c\u0131"
   sellPrice: 1
   rarity: {fileID: 11400000, guid: e88872819e740ee46b46d45d4d6cf5cd, type: 2}
-  useText: "500 Demir + 100 Eneri + 200 Su + 20 \u0130nsan"
+  useText: "500 Demir + 300 Eneri + 200 Su + 20 \u0130nsan"

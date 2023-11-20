@@ -24,6 +24,7 @@ public class MissionManager : MonoBehaviour
         { Rockettask.GetComponent<Image>().color = new Color32(50, 166, 51, 255);
             SoundManagerScript.PlayGameWinSound();
 
+            introscript.timerRunning = false;
             Finishcanvas.SetActive(true);
             oyuntamamlandi++;
         }

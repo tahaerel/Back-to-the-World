@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gamemanager: {fileID: 0}
-  enerji: 10
+  enerji: 5
   su: 0
   demir: 0
   yemek: 0
