@@ -92,6 +92,7 @@ public class onizlemeobje : MonoBehaviour
             {
                     
              Instantiate(Olusacakobje, transform.position, transform.rotation);
+                SoundManagerScript.playFlipSound();
              olusturuldu = true;
              Destroy(gameObject);
                     

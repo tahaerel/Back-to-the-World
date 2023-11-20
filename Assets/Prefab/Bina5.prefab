@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4369603053597533094}
   - component: {fileID: 1643836780045393401}
   - component: {fileID: 3190118273477913623}
+  - component: {fileID: 6298262689528495543}
   - component: {fileID: -4420754032518154315}
   m_Layer: 0
   m_Name: Bina5
@@ -100,6 +101,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.4682617, y: 3.86438, z: 5.7857704}
   m_Center: {x: 0.3890381, y: 1.43219, z: -0.17191982}
+--- !u!114 &6298262689528495543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3675264322775494263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858bb7795aa06ca4f917086b0d35485f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &-4420754032518154315
 Rigidbody:
   m_ObjectHideFlags: 0

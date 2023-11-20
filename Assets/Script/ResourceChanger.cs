@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ResourceChanger : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class ResourceChanger : MonoBehaviour
     public int Binaid;
     public bool is_stone;
     public bool is_water;
-    
+    public GameObject textobjesi;
+    public TextMeshPro puantext;
     void Start()
     {
       
@@ -31,8 +33,11 @@ public class ResourceChanger : MonoBehaviour
                 break;
             case 3:
                 StartCoroutine(water_stonect());
+                break;
 
-
+            case 4:
+                Debug.Log("case 4 ");
+                MissionManager.roketgorevibasarili = true;
                 break;
         }
  
@@ -56,30 +61,54 @@ public class ResourceChanger : MonoBehaviour
   
     void ArtirKoloni()
     {
-        Gamemanager.GetComponent<BinaYerlestirme>().kolonisayisi += koloni;
+        puantext.text = "+" + koloni.ToString();
+        textobjesi.SetActive(true);
+        Invoke("DisableText", 1.5f);
 
+        Gamemanager.GetComponent<BinaYerlestirme>().kolonisayisi += koloni;
+        if (Gamemanager.GetComponent<BinaYerlestirme>().kolonisayisi >= 20)
+        {
+            MissionManager.kolonigorevibasarili = true;
+        }
     }
     void ArtirEnerji()
     {
+        puantext.text = "+" + enerji.ToString();
+        textobjesi.SetActive(true);
         Gamemanager.GetComponent<BinaYerlestirme>().enerjiMiktar += enerji;
-  
+        Invoke("DisableText", 1.5f);
+
     }
 
     void ArtirSu()
     {
+        puantext.text = "+" + su.ToString();
+        textobjesi.SetActive(true);
         Gamemanager.GetComponent<BinaYerlestirme>().suMiktar += su;
+        Invoke("DisableText", 1.5f);
 
     }
     void Arttirdemir()
     {
+        puantext.text = "+" + demir.ToString();
+        textobjesi.SetActive(true);
         Gamemanager.GetComponent<BinaYerlestirme>().demirMiktar+= demir;
-
+        Invoke("DisableText", 1.5f);
     }
     void ArtirYemek()
     {
+        puantext.text = "+" + yemek.ToString();
+        textobjesi.SetActive(true);
         Gamemanager.GetComponent<BinaYerlestirme>().yemekmiktar += yemek;
-
+        Invoke("DisableText", 1.5f);
     }
+    void DisableText()
+    {
+        // Animator'ý devre dýþý býrak
+        textobjesi.SetActive(false);
+    }
+
+
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "demir")

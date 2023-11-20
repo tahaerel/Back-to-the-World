@@ -9,7 +9,7 @@ public class objesec : MonoBehaviour
     public GameObject Rover;
     public static bool butona_tiklandi;
     public BinaYerlestirme bnb;
-    public GameObject Error;
+    public GameObject Error,RoverButton;
     public static int index;
     public Image Rovertask;
     public void olustur(int deger)
@@ -20,6 +20,8 @@ public class objesec : MonoBehaviour
         switch (deger)
         {
             case 0:
+                SoundManagerScript.PlayBtnClickSound();
+
                 if (bnb.enerjiMiktar >= bnb.bina1EnerjiMaliyet && bnb.demirMiktar >= bnb.bina1DemirMaliyet && bnb.yemekmiktar >= bnb.bina1YemekMaliyet)
                 {
                     Instantiate(OnizlemeObjeler[deger]);
@@ -28,6 +30,7 @@ public class objesec : MonoBehaviour
                     bnb.enerjiMiktar -= bnb.bina1EnerjiMaliyet;
                     bnb.demirMiktar -= bnb.bina1DemirMaliyet;
                     bnb.yemekmiktar -= bnb.bina1YemekMaliyet;
+                  
                 }
                 else
                 {
@@ -36,6 +39,8 @@ public class objesec : MonoBehaviour
                 }
                 break;
             case 1:
+                SoundManagerScript.PlayBtnClickSound();
+
                 if (bnb.demirMiktar >= bnb.bina2DemirMaliyet)
                 {
                     bnb.demirMiktar -= bnb.bina2DemirMaliyet;
@@ -50,6 +55,8 @@ public class objesec : MonoBehaviour
                 }
                 break;
             case 2:
+                SoundManagerScript.PlayBtnClickSound();
+
                 if (bnb.demirMiktar >= bnb.bina3DemirMaliyet && bnb.enerjiMiktar >= bnb.bina3EnerjiMaliyet && bnb.suMiktar >= bnb.bina3SuMaliyet && bnb.kolonisayisi >= bnb.bina3KoloniMaliyet)
                 {
                     bnb.demirMiktar -= bnb.bina3DemirMaliyet;
@@ -67,6 +74,7 @@ public class objesec : MonoBehaviour
                 }
                 break;
             case 3:
+                SoundManagerScript.PlayBtnClickSound();
 
                 if (bnb.demirMiktar >= bnb.bina4DemirMaliyet && bnb.kolonisayisi >= bnb.bina4koloniMaliyet && bnb.enerjiMiktar >= bnb.bina4EnergyMaliyet)
                 {
@@ -85,8 +93,9 @@ public class objesec : MonoBehaviour
 
                 break;
             case 4:
-                
-                    if (bnb.demirMiktar >= bnb.bina5demirMmaliyet && bnb.enerjiMiktar >= bnb.bina5yenergyMaliyet && bnb.suMiktar >= bnb.bina5ySuMaliyet && bnb.kolonisayisi >= bnb.bina5KoloniMaliyet)
+                SoundManagerScript.PlayBtnClickSound();
+
+                if (bnb.demirMiktar >= bnb.bina5demirMmaliyet && bnb.enerjiMiktar >= bnb.bina5yenergyMaliyet && bnb.suMiktar >= bnb.bina5ySuMaliyet && bnb.kolonisayisi >= bnb.bina5KoloniMaliyet)
                     {   
                     bnb.demirMiktar -= bnb.bina5demirMmaliyet;
                     bnb.enerjiMiktar -= bnb.bina5yenergyMaliyet;
@@ -105,29 +114,29 @@ public class objesec : MonoBehaviour
                 break;
 
             case 5:
+                SoundManagerScript.PlayBtnClickSound();
+
                 if (bnb.demirMiktar >= bnb.roverdemirmaliyet)
                 {
                     bnb.demirMiktar -= bnb.roverdemirmaliyet;
 
                     Rovertask.GetComponent<Image>().color = new Color32(50, 166, 51, 255);
+                    SoundManagerScript.PlayGameWinSound();
+
 
                     Vector3 kameraPozisyon = Camera.main.transform.position;
 
                     Vector3 kameraYonu = Camera.main.transform.forward;
 
-                    // Objeyi biraz ileriye yerleştir
                     Vector3 olusturulacakPozisyon = kameraPozisyon + kameraYonu * 50.0f;
 
-                    // Y değerini sabitle
                     olusturulacakPozisyon.y = 1;
 
-                    // Objeyi oluştur
                     GameObject yeniObje = Instantiate(Rover, olusturulacakPozisyon, Quaternion.identity);
 
-                    // Objeyi kamera bakış yönüne doğru çevir
-                    yeniObje.transform.rotation = Quaternion.Euler(0, 180, 0); // Rotasyonu sabitle
+                    yeniObje.transform.rotation = Quaternion.Euler(0, 180, 0);
 
-
+                    RoverButton.SetActive(false);
                 }
                 else
                 {

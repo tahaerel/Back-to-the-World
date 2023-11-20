@@ -1,18 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MissionManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static bool kolonigorevibasarili=false;
+    public static bool roketgorevibasarili = false;
+    public  int oyuntamamlandi = 0;
+    public GameObject Finishcanvas;
+
+    public Image Kolonitask, Rockettask;
+
+    void LateUpdate()
     {
-        
+        if (kolonigorevibasarili)
+        { Kolonitask.GetComponent<Image>().color = new Color32(50, 166, 51, 255);
+            SoundManagerScript.PlayGameWinSound();
+            kolonigorevibasarili = false;
+        }
+
+        if (roketgorevibasarili && oyuntamamlandi==0)
+        { Rockettask.GetComponent<Image>().color = new Color32(50, 166, 51, 255);
+            SoundManagerScript.PlayGameWinSound();
+
+            Finishcanvas.SetActive(true);
+            oyuntamamlandi++;
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void xbutton()
     {
-        
+        Finishcanvas.SetActive(false);
     }
 }

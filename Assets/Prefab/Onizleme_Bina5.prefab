@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Olusacakobje: {fileID: 3675264322775494263, guid: c876fdd7f24be844ea884989299c57cf, type: 3}
-  gridSize: 1
+  gridSize: 4
   materyal: {fileID: 2100000, guid: ee7736f3334e9f0448153b4256bb0628, type: 2}
   matcolor: {fileID: 7860797748674580905}
   Gamemanager: {fileID: 0}
