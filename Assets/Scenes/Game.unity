@@ -220,7 +220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -149.90991, y: 35.483093}
+  m_AnchoredPosition: {x: -149.90991, y: 35.483154}
   m_SizeDelta: {x: 282.529, y: 70.9662}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &17027762
@@ -1647,7 +1647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enerjiMiktar: 100
   suMiktar: 200
-  demirMiktar: 100
+  demirMiktar: 80
   yemekmiktar: 200
   kolonisayisi: 8
   bina1EnerjiMaliyet: 250
@@ -10154,7 +10154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -233, y: -53.409}
+  m_AnchoredPosition: {x: -233, y: -53.409058}
   m_SizeDelta: {x: 432.83, y: 78.951}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1315866293
@@ -15883,6 +15883,7 @@ MonoBehaviour:
   bnb: {fileID: 208458090}
   Error: {fileID: 1443227558}
   RoverButton: {fileID: 1756625890}
+  Roverimage: {fileID: 695806887}
   Rovertask: {fileID: 971427888}
 --- !u!114 &2080475482
 MonoBehaviour:

@@ -9,7 +9,7 @@ public class objesec : MonoBehaviour
     public GameObject Rover;
     public static bool butona_tiklandi;
     public BinaYerlestirme bnb;
-    public GameObject Error,RoverButton;
+    public GameObject Error,RoverButton,Roverimage;
     public static int index;
     public Image Rovertask;
     public void olustur(int deger)
@@ -136,7 +136,8 @@ public class objesec : MonoBehaviour
 
                     yeniObje.transform.rotation = Quaternion.Euler(0, 180, 0);
 
-                    RoverButton.SetActive(false);
+                    RoverButton.GetComponent<Button>().interactable=false;
+                    Roverimage.GetComponent<Button>().interactable = false;
                 }
                 else
                 {
