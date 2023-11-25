@@ -14,13 +14,13 @@ public class Bina6Hover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     public void OnPointerEnter(PointerEventData eventData)
     {
         Bina6_hover = true;
-        if (bnb.demirMiktar <= bnb.roverdemirmaliyet)
+        if (bnb.demirMiktar >= bnb.roverdemirmaliyet)
         {
-            Bina6demir_yeter = true;
+            Bina6demir_yeter = false;
         }
         else
         {
-            Bina6demir_yeter = false;
+            Bina6demir_yeter = true;
         }
     }
 

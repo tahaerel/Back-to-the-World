@@ -20,29 +20,29 @@ public class Bina1Hover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         Debug.Log("Hover0");
 
         Bina1_hover = true;
-       if (bnb.enerjiMiktar <= bnb.bina1EnerjiMaliyet)
-        {
-            Bina1enerji_yeter = true;
-        }
-        else
+       if (bnb.enerjiMiktar >= bnb.bina1EnerjiMaliyet)
         {
             Bina1enerji_yeter = false;
         }
-       if(bnb.demirMiktar <= bnb.bina1DemirMaliyet)
-        {
-            Bina1demir_yeter = true;
-        }
         else
+        {
+            Bina1enerji_yeter = true;
+        }
+       if(bnb.demirMiktar >= bnb.bina1DemirMaliyet)
         {
             Bina1demir_yeter = false;
         }
-        if (bnb.yemekmiktar <= bnb.bina1YemekMaliyet)
+        else
         {
-            Bina1yemek_yeter = true;
+            Bina1demir_yeter = true;
+        }
+        if (bnb.yemekmiktar >= bnb.bina1YemekMaliyet)
+        {
+            Bina1yemek_yeter = false;
         }
         else
         {
-            Bina1yemek_yeter = false;
+            Bina1yemek_yeter = true;
         }
 
 

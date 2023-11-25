@@ -143,7 +143,7 @@ public class Consumable : Item
             }
             else
             {
-                builder.Append(Bina3Hover.colorgreen3).Append(gerekli_kaynak3).Append("</color>").AppendLine();
+                builder.Append(Bina4Hover.colorgreen4).Append(gerekli_kaynak3).Append("</color>").AppendLine();
             }
 
 
@@ -184,7 +184,7 @@ public class Consumable : Item
             }
             else
             {
-                builder.Append(Bina3Hover.colorgreen3).Append(gerekli_kaynak4).Append("</color>").AppendLine();
+                builder.Append(Bina5Hover.colorgreen5).Append(gerekli_kaynak4).Append("</color>").AppendLine();
             }
 
 
