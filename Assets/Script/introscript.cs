@@ -101,7 +101,7 @@ public class introscript : MonoBehaviour
 
     private void UpdateTimerText()
     {
- 
+
         if (timerText != null)
         {
             timerText.text = timer.ToString("F2");

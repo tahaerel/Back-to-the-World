@@ -12,6 +12,7 @@ public class onizlemeobje : MonoBehaviour
     public MeshRenderer matcolor;
     public GameObject Gamemanager;
     public SpriteRenderer[] renderers;
+    public static bool gridacik;
 
 
     public static bool olusturuldu;
@@ -19,7 +20,6 @@ public class onizlemeobje : MonoBehaviour
     {
 
         Gamemanager = GameObject.Find("GameManager");
-
         olusturabilirmi = true;
         olusturuldu = false;
         UpdatePosition();
@@ -85,7 +85,7 @@ public class onizlemeobje : MonoBehaviour
     void Update()
     {
         UpdatePosition();
-
+        gridacik = true;
         if (Input.GetMouseButton(0))
         {
             if (olusturabilirmi)
@@ -95,17 +95,18 @@ public class onizlemeobje : MonoBehaviour
                 SoundManagerScript.playFlipSound();
              olusturuldu = true;
              Destroy(gameObject);
-                    
-                
+                gridacik = false;
+
             }
         }
 
         if (Input.GetMouseButton(1))
         {
             Destroy(gameObject);
-            
-            
-           switch(objesec.index)
+
+            gridacik = false;
+
+            switch (objesec.index)
             {
               case 0:
 

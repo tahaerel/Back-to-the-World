@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BinaYerlestirme : MonoBehaviour
 {
+
     public int enerjiMiktar = 10;
     public int suMiktar = 50;
     public int demirMiktar = 1;

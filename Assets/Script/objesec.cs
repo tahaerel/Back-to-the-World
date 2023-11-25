@@ -14,7 +14,6 @@ public class objesec : MonoBehaviour
     public Image Rovertask;
 
 
-
     //private void Update()
     //{
     //    if(bnb.enerjiMiktar >= bnb.bina1EnerjiMaliyet)
