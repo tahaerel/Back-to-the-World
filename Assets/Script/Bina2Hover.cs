@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Bina2Hover : MonoBehaviour , IPointerEnterHandler, IPointerExitHandler
+public class Bina2Hover : MonoBehaviour , IPointerEnterHandler, IPointerExitHandler 
 {
     public BinaYerlestirme bnb;
     public static string colorRed2 = "<color=red>Yetersiz : ";
@@ -16,13 +16,13 @@ public class Bina2Hover : MonoBehaviour , IPointerEnterHandler, IPointerExitHand
     public void OnPointerEnter(PointerEventData eventData)
     {
         Bina2_hover = true;
-        if (bnb.demirMiktar <= bnb.bina2DemirMaliyet)
+        if (bnb.demirMiktar >=  bnb.bina2DemirMaliyet)
         {
-            Bina2demir_yeter = true;
+            Bina2demir_yeter = false;
         }
         else
         {
-            Bina2demir_yeter = false;
+            Bina2demir_yeter = true;
         }
     }
 

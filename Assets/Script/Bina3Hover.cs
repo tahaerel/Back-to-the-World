@@ -21,37 +21,37 @@ public class Bina3Hover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     public void OnPointerEnter(PointerEventData eventData)
     {
         Bina3_hover = true;
-        if(bnb.demirMiktar <= bnb.bina3DemirMaliyet)
-        {
-            Bina3demir_yeter = true;
-        }
-        else
+        if(bnb.demirMiktar >= bnb.bina3DemirMaliyet)
         {
             Bina3demir_yeter = false;
         }
-        if(bnb.enerjiMiktar <= bnb.bina3EnerjiMaliyet)
-        {
-            Bina3enerji_yeter = true;
-        }
         else
+        {
+            Bina3demir_yeter = true;
+        }
+        if(bnb.enerjiMiktar >= bnb.bina3EnerjiMaliyet)
         {
             Bina3enerji_yeter = false;
         }
-        if(bnb.suMiktar <= bnb.bina3SuMaliyet)
-        {
-            Bina3su_yeter = true;
-        }
         else
+        {
+            Bina3enerji_yeter = true;
+        }
+        if(bnb.suMiktar >= bnb.bina3SuMaliyet)
         {
             Bina3su_yeter = false;
         }
-        if(bnb.kolonisayisi <= bnb.bina3KoloniMaliyet)
+        else
         {
-            Bina3koloni_yeter = true;
+            Bina3su_yeter = true;
+        }
+        if(bnb.kolonisayisi >= bnb.bina3KoloniMaliyet)
+        {
+            Bina3koloni_yeter = false;
         }
         else
         {
-            Bina3koloni_yeter = false;
+            Bina3koloni_yeter = true;
         }
     }
 

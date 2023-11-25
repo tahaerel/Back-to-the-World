@@ -1645,11 +1645,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61debf739d01eca42bfe3d6ad908ed5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enerjiMiktar: 100
-  suMiktar: 200
-  demirMiktar: 80
-  yemekmiktar: 200
-  kolonisayisi: 8
+  enerjiMiktar: 120
+  suMiktar: 150
+  demirMiktar: 100
+  yemekmiktar: 100
+  kolonisayisi: 1
   bina1EnerjiMaliyet: 250
   bina1DemirMaliyet: 150
   bina1YemekMaliyet: 100
