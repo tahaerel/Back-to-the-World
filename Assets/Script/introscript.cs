@@ -11,7 +11,7 @@ public class introscript : MonoBehaviour
     public GameObject backButton; // Geri butonu
     public TextMeshProUGUI timerText; // Süre sayaç metni
     private int currentTextIndex = 0; // Þu anki metin dizini
-    private float timer = 0f; // Sayaç
+    public static float timer = 0f; // Sayaç
     public static bool timerRunning = false;
     private void Start()
     {

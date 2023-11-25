@@ -9,6 +9,7 @@ public class MissionManager : MonoBehaviour
     public static bool roketgorevibasarili = false;
     public  int oyuntamamlandi = 0;
     public GameObject Finishcanvas;
+    public GameObject leaderboard;
 
     public Image Kolonitask, Rockettask;
 
@@ -30,9 +31,16 @@ public class MissionManager : MonoBehaviour
         }
 
     }
+    public void leaderboardkapa()
+    {
+        leaderboard.SetActive(false);
+
+    }
 
     public void xbutton()
     {
         Finishcanvas.SetActive(false);
+        leaderboard.SetActive(true);
+
     }
 }
