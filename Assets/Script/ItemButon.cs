@@ -11,6 +11,7 @@ public class ItemButon : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public void OnPointerEnter(PointerEventData eventData)
     {
         tooltipPopup.DisplayInfo(item);
+        
     }
 
     public void OnPointerExit(PointerEventData eventData)
