@@ -8,7 +8,7 @@ public class introscript : MonoBehaviour
 
     public TextMeshProUGUI[] texts; // Metin nesneleri dizisi
     public GameObject intro; // Kapalý olmasý istenen GameObject
-    public GameObject backButton; // Geri butonu
+    public GameObject backButton,kaynaklar; // Geri butonu
     public TextMeshProUGUI timerText; // Süre sayaç metni
     private int currentTextIndex = 0; // Þu anki metin dizini
     public static float timer = 0f; // Sayaç
@@ -31,6 +31,8 @@ public class introscript : MonoBehaviour
             CloseIntro();
         
             StartTimer();
+            kaynaklar.SetActive(true);
+
         }
 
         backButton.SetActive(true);
@@ -63,6 +65,8 @@ public class introscript : MonoBehaviour
     public void closeintrobutton()
     {
         CloseIntro();
+
+        kaynaklar.SetActive(true) ;
         StartTimer();
     }
 
